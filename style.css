@@ -1,3 +1,13 @@
 body {
-  font-family: "Rototo", sans-serif;
+  font-family: "Roboto-Light", sans-serif;
 }
+
+.logo {
+  font-family: "Shrikhand-Regular", sans-serif;
+}
+
+#section_recherche {
+  margin-left: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */
