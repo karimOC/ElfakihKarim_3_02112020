@@ -6,13 +6,25 @@ body {
     font-family: "Roboto-Light", sans-serif;
   }
 $grey: rgb(245, 245, 245);
-
+$violet: #9356DC;
+$rose: #FF79DA;
+$vert: #99E2D0;
+$marginMenu: 15px;
+@mixin lien_menu {
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 13px;
+    }
+}
+@mixin backgroundcolor_menu {
+    background-color: #fac8ed1f;
+}
 .logo {
     font-family: "Shrikhand-Regular", sans-serif;
     text-align: center;
     font-size: 20px;
   }
-
 #section_recherche {
       border: 1px solid yellow;
     .ville  {
@@ -25,24 +37,24 @@ $grey: rgb(245, 245, 245);
       border: none;
       background-color: darken($grey, 3%);
       outline: none;
+        &::placeholder {
+         color: rgb(49, 49, 49);
+        }
     }
     .explorer {
       display: flex;
       justify-content: center;
       text-align: center;
+      padding: 0px 0px 20px 0px;
+      p {
+        font-size: 13px;}
     }
 }
-.explorer  {
-      border: 1px solid yellow;
+.explorer {
       display: flex;
       flex-direction: column;
       justify-content: center;
       background-color: rgb(245, 245, 245);
-      padding-bottom: 20px;
-    .titre {
-      border: 1px solid pink;
-      font-weight: bold;
-    }
     input {
       border: none;
       outline: none;
@@ -50,20 +62,65 @@ $grey: rgb(245, 245, 245);
       height: 40px;
       border-radius: 20px;
       color: white;
+      background: linear-gradient(to bottom right, $rose, $violet);
     }
+  }
+nav {
+  display: flex;
+  flex-direction: column;
+    @include lien_menu()
   }
 #section_menu {
-    border: 1px solid yellow;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  .menu {
+    @include backgroundcolor_menu()
+  }
 }
-nav {
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+    i {
+      color: darken($grey, 20%);
+      margin-right: $marginMenu;
+    }
+}
+  .cercle {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $violet;
+    color: white;
+    font-size: 12px;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
+    margin-right: $marginMenu;
   }
 #section-restau {
-    .titre {
-        border: 1px solid yellow;
-    }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .bloc-restau {
     border: 1px solid red;
+}
+
+@media screen and (max-width: 450px) {
+  h4 {
+    width: 100%;
+    text-align: left;
+  }
+  .explorer h4 {
+    text-align: center;
+  }
 }
