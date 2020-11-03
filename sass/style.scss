@@ -12,13 +12,13 @@ $rose: #ff79da;
 $vert: #99e2d0;
 $marginMenu: 12px;
 $marginLeftText: 5px;
-$background-color-menu: #fac8ed1f;
+$box-shadow: 1px 5px 8px 0px rgb(233, 233, 233);
 /* LES MIXIN */
 @mixin lien_menu {
   a {
     text-decoration: none;
     color: black;
-    font-size: 12px;
+    font-size: 13px;
     width: 60%;
   }
 }
@@ -28,6 +28,7 @@ $background-color-menu: #fac8ed1f;
     justify-content: center;
     background-color: darken($grey, 2%);
     padding: 5px;
+    box-shadow: 0px 4px 3px -2px rgb(196, 196, 196) inset;
   }
   .ville input {
     border: none;
@@ -67,22 +68,24 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   @include lien_menu();
 }
 #section_menu {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   .menu {
-    background-color: $background-color-menu;
+    background-color: $grey;
     display: flex;
     align-items: center;
     border-radius: 12px;
     height: 45px;
     margin-bottom: $marginMenu;
     font-weight: bold;
+    box-shadow: $box-shadow;
     &:hover {
-      background-color: darken($background-color-menu, 50%);
+      background-color: lighten($violet, 37%);
       &:hover i {
         color: $violet;
       }
@@ -120,7 +123,7 @@ nav {
   width: 90%;
   border-radius: 15px;
   margin-bottom: 15px;
-  box-shadow: 0px 0px 10px 6px rgb(230, 230, 230);
+  box-shadow: $box-shadow;
   .imgRestau {
     display: inline-block;
     position: relative;
@@ -142,7 +145,6 @@ nav {
     }
   }
     .titreRestau {
-      border: 1px solid pink;
       display: inline-block;
       position: relative;
       line-height: 0;
@@ -159,15 +161,15 @@ nav {
           right: 8%;
           top: 40%;
         }
-      }  
-      
+      }
+
 }
 
 @media screen and (max-width: 460px) {
   h4 {
     width: 100%;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .explorer h4 {
     text-align: center;
