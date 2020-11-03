@@ -4,31 +4,28 @@
 // }
 body {
   font-family: "Roboto-Light", sans-serif;
+  margin: 0;
+  // margin-top: 5px;
   }
+/* IMPORT .SCSS */
+  @import 'header.scss';
 /* LES VARIABLES */
 $grey: rgb(248, 248, 248);
 $violet: #9356DC;
 $rose: #FF79DA;
 $vert: #99E2D0;
-$marginMenu: 15px;
+$marginMenu: 12px;
 $background-color-menu: #fac8ed1f;
 /* LES MIXIN */
 @mixin lien_menu {
     a {
       text-decoration: none;
       color: black;
-      font-size: 11px;
+      font-size: 12px;
+      width: 60%;
     }
 }
-header {
-  display: flex;
-  justify-content: center;
-  .logo {
-    width: 150px;
-  }
-}
 #section_recherche {
-      border: 1px solid yellow;
     .ville  {
       display: flex;
       justify-content: center;
@@ -69,23 +66,19 @@ header {
   }
 nav {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
+  align-items: center;
     @include lien_menu()
   }
 #section_menu {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
     .menu {
       background-color: $background-color-menu;
       display: flex;
       align-items: center;
       border-radius: 12px;
-      width: 200px;
-      height: 50px;
+      height: 45px;
       margin-bottom: $marginMenu;
       font-weight: bold;
       &:hover {
@@ -118,20 +111,14 @@ nav {
 }
 #section-restau {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    text-align: center;
 }
 .bloc-restau {
     border: 1px solid red;
 }
 
-@media screen and (max-width: 450px) {
-  h4 {
-    width: 100%;
-    text-align: left;
-  }
-  .explorer h4 {
-    text-align: center;
-  }
+@media screen and (max-width: 460px) {
+ 
+
 }
