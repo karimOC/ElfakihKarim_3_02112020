@@ -13,6 +13,33 @@ header .logo {
   width: 150px;
 }
 
+footer {
+  background-color: #292929;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 20px 20px;
+}
+footer .logo {
+  width: 80px;
+  -webkit-filter: invert(100%);
+  /* inverser la couleur */
+  padding-bottom: 10px;
+}
+footer p {
+  color: white;
+  font-size: 11px;
+  line-height: 1px;
+}
+footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+footer a i {
+  width: 20px;
+  color: white;
+}
+
 /* LES VARIABLES */
 /* LES MIXIN */
 #section_recherche .ville {
@@ -31,29 +58,24 @@ header .logo {
   color: #313131;
 }
 #section_recherche .explorer {
+  background-color: #f8f8f8;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0px 0px 20px 0px;
+  padding: 10px 0px 40px 0px;
 }
 #section_recherche .explorer p {
   font-size: 13px;
 }
-
-.explorer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f8f8f8;
-}
-.explorer input {
+#section_recherche .explorer input {
   border: none;
   outline: none;
   width: 200px;
   height: 40px;
   border-radius: 20px;
   color: white;
+  margin-top: 15px;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
 }
 
@@ -74,6 +96,7 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 30px;
 }
 #section_menu .menu {
   background-color: #f8f8f8;
@@ -103,12 +126,14 @@ nav a {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+  margin-right: 12px;
 }
 #section_menu .menu .cercle p {
   font-size: 10px;
 }
 #section_menu .menu i {
-  color: #c5c5c5;
+  width: 20px;
+  color: #acacac;
   margin-right: 12px;
 }
 
@@ -116,6 +141,9 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f8f8f8;
+  padding-top: 15px;
+  padding-bottom: 50px;
 }
 
 .bloc-restau {
@@ -132,7 +160,7 @@ nav a {
 }
 .bloc-restau .imgRestau img {
   width: 100%;
-  height: 150px;
+  height: 180px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -150,14 +178,15 @@ nav a {
   display: inline-block;
   position: relative;
   line-height: 0;
+  padding-bottom: 10px;
 }
 .bloc-restau .titreRestau p {
   font-size: 11px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .bloc-restau .titreRestau h6 {
   font-weight: bold;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .bloc-restau .titreRestau i {
   position: absolute;
@@ -169,7 +198,7 @@ nav a {
   h4 {
     width: 100%;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 30px;
   }
 
   .explorer h4 {
