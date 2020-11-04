@@ -1,3 +1,10 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 $grey: rgb(248, 248, 248);
 $violet: #9356dc;
 $rose: #ff79da;
@@ -19,8 +26,8 @@ $marginBottom: 15px;
     top: 190px;
     padding-bottom: 50px;
     .titreMenu {
+    font-family: 'Shrikhand', sans-serif;
     width: 80%;
-    font-family: "Shrikhand", sans-serif;
     font-size: 30px;
     display: flex;
     flex-direction: row;
@@ -32,7 +39,7 @@ $marginBottom: 15px;
         width: 90%;
         margin-bottom: 15px;
         p {
-            font-size: 15px;
+            font-size: 13px;
             line-height: 0;
         }
         .souligne {
@@ -49,8 +56,8 @@ $marginBottom: 15px;
             padding: 2px 0px 5px 12px;
             margin-bottom: $marginBottom;
             .prix {
+                font-size: 13px;
                 font-weight: bold;
-                font-size: 15px;
                 position: absolute;
                 right: 5%;
                 top: 70%;

@@ -1,10 +1,12 @@
 body {
-  font-family: "Roboto", "Shrikhand",sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   margin: 0;
 }
 /* IMPORT .SCSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
 @import "header.scss";
-@import "footer.scss";
+@import "footer.scss"; 
 @import "menu.scss";
 /* LES VARIABLES */
 $grey: rgb(248, 248, 248);
@@ -12,7 +14,7 @@ $violet: #9356dc;
 $rose: #ff79da;
 $vert: #99e2d0;
 $marginMenu: 12px;
-$marginLeftText: 10px;
+$marginLeftText: 10px; 
 $box-shadow: 1px 5px 8px 0px rgb(233, 233, 233);
 /* LES MIXIN */
 @mixin lien_menu {
@@ -164,11 +166,12 @@ nav {
       width: 80%;
     }
     p {
-      font-size: 11px;
+      font-size: 12px;
       margin-left: $marginLeftText;
     }
     h6 {
       font-weight: bold;
+      font-size: 13px;
       margin-left: $marginLeftText;
     }
     i {
