@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url("/sass/Roboto-Light.ttf") format("ttf"), url("/sass/Shrikhand-Regular.otf") format("otf");
+}
 /* IMPORT .SCSS */
 header {
   display: flex;
@@ -17,7 +21,6 @@ header a {
   left: 20px;
 }
 header .logo {
-  border: 1px solid pink;
   width: 150px;
 }
 
@@ -46,6 +49,82 @@ footer a {
 footer a i {
   width: 20px;
   color: white;
+}
+
+.imgAccueil img {
+  width: 110%;
+  height: 250px;
+  position: absolute;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  top: 180px;
+  padding-bottom: 50px;
+}
+#menu .titreMenu {
+  width: 80%;
+  font-family: "Shrikhand-Regular", sans-serif;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+#menu .bloc-menu {
+  width: 90%;
+  margin-bottom: 15px;
+}
+#menu .bloc-menu p {
+  font-size: 15px;
+  line-height: 0;
+}
+#menu .bloc-menu .souligne {
+  background-color: #99e2d0;
+  width: 40px;
+  height: 2px;
+  margin-bottom: 15px;
+}
+#menu .bloc-menu .plats {
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  line-height: 0;
+  padding: 2px 0px 5px 12px;
+  margin-bottom: 15px;
+}
+#menu .bloc-menu .plats .prix {
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  right: 5%;
+  top: 70%;
+}
+#menu input {
+  border: none;
+  outline: none;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 15px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+}
+#menu input:hover {
+  background-color: red;
+  cursor: url(/images/cursor.png), auto;
+}
+
+footer {
+  position: relative;
+  top: 180px;
 }
 
 /* LES VARIABLES */
