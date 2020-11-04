@@ -2,12 +2,10 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  margin: 0;
 }
 
 /* IMPORT .SCSS */
 header {
-  border: 1px solid pink;
   font-family: "Shrikhand", cursive;
   text-align: center;
   display: flex;
@@ -15,7 +13,6 @@ header {
   align-items: center;
 }
 header a {
-  border: 1px solid pink;
   text-decoration: none;
   color: black;
   position: absolute;
@@ -50,6 +47,7 @@ footer a {
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: white;
 }
 footer a i {
   width: 20px;
@@ -82,7 +80,7 @@ body {
 #menu .titreMenu {
   font-family: "Shrikhand", sans-serif;
   width: 80%;
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -302,9 +300,8 @@ nav a {
 
 @media screen and (max-width: 460px) {
   h4 {
-    width: 100%;
+    width: 90%;
     text-align: left;
-    padding-left: 30px;
   }
 
   .explorer h4 {
