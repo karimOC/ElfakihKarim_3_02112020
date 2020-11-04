@@ -4,11 +4,10 @@ $rose: #ff79da;
 $vert: #99e2d0;
 $marginBottom: 15px;
 .imgAccueil img {
-    width: 110%;
+    width: 100%;
     height: 250px;
     position: absolute;
 }
-
 #menu {
     display: flex;
     flex-direction: column;
@@ -17,11 +16,11 @@ $marginBottom: 15px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     position: relative;
-    top: 180px;
+    top: 190px;
     padding-bottom: 50px;
     .titreMenu {
     width: 80%;
-    font-family: "Shrikhand-Regular", sans-serif;
+    font-family: "Shrikhand", sans-serif;
     font-size: 30px;
     display: flex;
     flex-direction: row;
