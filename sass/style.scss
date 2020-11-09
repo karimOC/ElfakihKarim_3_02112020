@@ -28,7 +28,6 @@ $box-shadow: 1px 5px 8px 0px rgb(233, 233, 233);
   a {
     text-decoration: none;
     color: black;
-    // width: 30%;
   }
 }
 #section_recherche {
@@ -55,6 +54,7 @@ $box-shadow: 1px 5px 8px 0px rgb(233, 233, 233);
     text-align: center;
     padding: 10px 0px 40px 0px;
     p {
+      width: 70%;
       font-size: 13px;
     }
     input {
@@ -92,6 +92,7 @@ nav {
     box-shadow: $box-shadow;
     &:hover {
       background-color: lighten($violet, 37%);
+      box-shadow: 1px 5px 8px 0px rgb(209, 209, 209);
       &:hover i {
         color: $violet;
       }
@@ -177,6 +178,10 @@ nav {
       position: absolute;
       right: 8%;
       top: 40%;
+      &:hover {
+        background-color: $rose;
+        transition: background-color 1500ms;
+      }
     }
   }
 }

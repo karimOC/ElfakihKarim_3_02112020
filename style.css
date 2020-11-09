@@ -92,7 +92,7 @@ body {
   margin-bottom: 15px;
 }
 #menu .bloc-menu p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 0;
 }
 #menu .bloc-menu .souligne {
@@ -108,13 +108,71 @@ body {
   line-height: 0;
   padding: 2px 0px 5px 12px;
   margin-bottom: 15px;
+  transform: rotate(0turn);
+}
+#menu .bloc-menu .plats:hover .transitionOk {
+  transform-origin: right 100%;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(1);
+}
+#menu .bloc-menu .plats:hover .fa-check-circle {
+  transform: rotate(2turn);
+  transition: transform 400ms ease-in-out;
+}
+#menu .bloc-menu .plats:hover .prix {
+  transform: translate(-100px, 0);
+  transition: transform 300ms ease-in-out;
+}
+#menu .bloc-menu .plats:hover .points {
+  transform-origin: right 100%;
+  transform: translate(-300px, 0);
+  transform: scaleX(1);
+  transition: transform 300ms ease-in-out;
+}
+#menu .bloc-menu .plats h5 {
+  font-size: 18px;
+}
+#menu .bloc-menu .plats p {
+  font-size: 18px;
+}
+#menu .bloc-menu .plats .titreDescriptif {
+  border: 1px solid pink;
+}
+#menu .bloc-menu .plats .points {
+  border: 1px solid red;
+  height: 10px;
+  font-size: 22px;
+  padding: 0px 110px 0px 10px;
+  margin-right: 50px;
+  position: absolute;
+  right: 15%;
+  top: 40%;
+  transform: scaleX(0);
 }
 #menu .bloc-menu .plats .prix {
-  font-size: 13px;
   font-weight: bold;
   position: absolute;
   right: 5%;
   top: 70%;
+}
+#menu .bloc-menu .plats .fa-check-circle {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#menu .bloc-menu .transitionOk {
+  background-color: #99e2d0;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: scaleX(0);
 }
 #menu input {
   border: none;
@@ -162,6 +220,7 @@ footer {
   padding: 10px 0px 40px 0px;
 }
 #section_recherche .explorer p {
+  width: 70%;
   font-size: 13px;
 }
 #section_recherche .explorer input {
@@ -206,6 +265,7 @@ nav a {
 }
 #section_menu .menu:hover {
   background-color: #f7f2fc;
+  box-shadow: 1px 5px 8px 0px #d1d1d1;
 }
 #section_menu .menu:hover:hover i {
   color: #9356dc;
@@ -296,6 +356,10 @@ nav a {
   position: absolute;
   right: 8%;
   top: 40%;
+}
+.bloc-restau .infoRestau i:hover {
+  background-color: #ff79da;
+  transition: background-color 1500ms;
 }
 
 @media screen and (max-width: 460px) {
