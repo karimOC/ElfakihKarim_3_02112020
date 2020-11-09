@@ -103,7 +103,6 @@ body {
 }
 #menu .bloc-menu .plats {
   display: flex;
-  position: relative;
   background-color: white;
   border-radius: 20px;
   line-height: 0;
@@ -125,37 +124,55 @@ body {
   transition: transform 300ms ease-in-out;
 }
 #menu .bloc-menu .plats:hover .points {
+  transform: scaleX(1);
   transform: translate(-100px, 0);
-  transition: transform 300ms ease-in-out;
+  transition: transform 400ms ease-in;
 }
 #menu .bloc-menu .plats h5 {
-  font-size: 18px;
+  font-size: 14px;
 }
 #menu .bloc-menu .plats p {
-  font-size: 18px;
+  font-size: 12px;
+  line-height: 1;
 }
 #menu .bloc-menu .plats .titreDescriptif {
-  border: 1px solid pink;
-  width: 90%;
+  width: 80%;
 }
 #menu .bloc-menu .plats .prixDescriptif {
-  border: 1px solid red;
+  background-color: white;
   width: 10%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 0px 15px 15px 0px;
+  padding: 0px 20px 18px 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 #menu .bloc-menu .plats .points {
-  border: 1px solid blue;
+  background-color: white;
   display: flex;
   align-items: flex-end;
+  padding: 0px 20px 0px 20px;
+  transform: scaleX(0);
 }
 #menu .bloc-menu .plats .points p {
-  font-size: 25px;
+  font-size: 12px;
+  font-weight: bold;
 }
 #menu .bloc-menu .plats .prix {
+  font-size: 13px;
   font-weight: bold;
+}
+#menu .bloc-menu .plats .transitionOk {
+  background-color: #99e2d0;
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: scaleX(0);
 }
 #menu .bloc-menu .plats .fa-check-circle {
   color: white;
@@ -164,17 +181,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-}
-#menu .bloc-menu .transitionOk {
-  background-color: #99e2d0;
-  width: 20%;
-  height: 100%;
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  transform: scaleX(0);
 }
 #menu input {
   border: none;
