@@ -102,6 +102,7 @@ body {
   margin-bottom: 15px;
 }
 #menu .bloc-menu .plats {
+  display: flex;
   position: relative;
   background-color: white;
   border-radius: 20px;
@@ -119,14 +120,12 @@ body {
   transform: rotate(2turn);
   transition: transform 400ms ease-in-out;
 }
-#menu .bloc-menu .plats:hover .prix {
+#menu .bloc-menu .plats:hover .prixDescriptif {
   transform: translate(-100px, 0);
   transition: transform 300ms ease-in-out;
 }
 #menu .bloc-menu .plats:hover .points {
-  transform-origin: right 100%;
-  transform: translate(-300px, 0);
-  transform: scaleX(1);
+  transform: translate(-100px, 0);
   transition: transform 300ms ease-in-out;
 }
 #menu .bloc-menu .plats h5 {
@@ -137,23 +136,26 @@ body {
 }
 #menu .bloc-menu .plats .titreDescriptif {
   border: 1px solid pink;
+  width: 90%;
+}
+#menu .bloc-menu .plats .prixDescriptif {
+  border: 1px solid red;
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px 15px 15px 0px;
 }
 #menu .bloc-menu .plats .points {
-  border: 1px solid red;
-  height: 10px;
-  font-size: 22px;
-  padding: 0px 110px 0px 10px;
-  margin-right: 50px;
-  position: absolute;
-  right: 15%;
-  top: 40%;
-  transform: scaleX(0);
+  border: 1px solid blue;
+  display: flex;
+  align-items: flex-end;
+}
+#menu .bloc-menu .plats .points p {
+  font-size: 25px;
 }
 #menu .bloc-menu .plats .prix {
   font-weight: bold;
-  position: absolute;
-  right: 5%;
-  top: 70%;
 }
 #menu .bloc-menu .plats .fa-check-circle {
   color: white;
