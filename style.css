@@ -251,7 +251,7 @@ nav {
 nav a {
   text-decoration: none;
   color: black;
-  font-size: 13px;
+  font-size: 17px;
   width: 60%;
 }
 
@@ -261,24 +261,27 @@ nav a {
   align-items: center;
   padding-bottom: 30px;
 }
-#section_menu .menu {
+#section_menu a {
+  width: 80%;
+}
+#section_menu a .menu {
   background-color: #f8f8f8;
   display: flex;
   align-items: center;
   border-radius: 12px;
-  height: 45px;
-  margin-bottom: 12px;
+  height: 60px;
+  margin-bottom: 20px;
   font-weight: bold;
   box-shadow: 1px 5px 8px 0px #e9e9e9;
 }
-#section_menu .menu:hover {
+#section_menu a .menu:hover {
   background-color: #f7f2fc;
   box-shadow: 1px 5px 8px 0px #d1d1d1;
 }
-#section_menu .menu:hover:hover i {
+#section_menu a .menu:hover:hover i {
   color: #9356dc;
 }
-#section_menu .menu .cercle {
+#section_menu a .menu .cercle {
   position: relative;
   right: 10px;
   display: flex;
@@ -290,15 +293,15 @@ nav a {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  margin-right: 12px;
+  margin-right: 20px;
 }
-#section_menu .menu .cercle p {
-  font-size: 10px;
+#section_menu a .menu .cercle p {
+  font-size: 11px;
 }
-#section_menu .menu i {
+#section_menu a .menu i {
   width: 20px;
   color: #acacac;
-  margin-right: 12px;
+  margin-right: 20px;
 }
 
 #section-restau {
@@ -352,12 +355,12 @@ nav a {
   width: 80%;
 }
 .bloc-restau .infoRestau p {
-  font-size: 12px;
+  font-size: 14px;
   margin-left: 10px;
 }
 .bloc-restau .infoRestau h6 {
   font-weight: bold;
-  font-size: 13px;
+  font-size: 14px;
   margin-left: 10px;
 }
 .bloc-restau .infoRestau i {

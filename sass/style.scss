@@ -12,7 +12,7 @@ $grey: rgb(248, 248, 248);
 $violet: #9356dc;
 $rose: #ff79da;
 $vert: #99e2d0;
-$marginMenu: 12px;
+$marginMenu: 20px;
 $marginLeftText: 10px; 
 $box-shadow: 1px 5px 8px 0px rgb(233, 233, 233);
 /* LES MIXIN */
@@ -20,7 +20,7 @@ $box-shadow: 1px 5px 8px 0px rgb(233, 233, 233);
   a {
     text-decoration: none;
     color: black;
-    font-size: 13px;
+    font-size: 17px;
     width: 60%;
   }
 }
@@ -75,49 +75,53 @@ nav {
   align-items: center;
   width: 100%;
   @include lien_menu();
+
 }
 #section_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
-  .menu {
-    background-color: $grey;
-    display: flex;
-    align-items: center;
-    border-radius: 12px;
-    height: 45px;
-    margin-bottom: $marginMenu;
-    font-weight: bold;
-    box-shadow: $box-shadow;
-    &:hover {
-      background-color: lighten($violet, 37%);
-      box-shadow: 1px 5px 8px 0px rgb(209, 209, 209);
-      &:hover i {
-        color: $violet;
-      }
-    }
-    .cercle {
-      position: relative;
-      right: 10px;
+  a {
+    width: 80%;
+    .menu {
+      background-color: $grey;
       display: flex;
-      justify-content: center;
       align-items: center;
-      background: $violet;
-      color: white;
-      font-size: 12px;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      margin-right: $marginMenu;
-      p {
-        font-size: 10px;
+      border-radius: 12px;
+      height: 60px;
+      margin-bottom: $marginMenu;
+      font-weight: bold;
+      box-shadow: $box-shadow;
+      &:hover {
+        background-color: lighten($violet, 37%);
+        box-shadow: 1px 5px 8px 0px rgb(209, 209, 209);
+        &:hover i {
+          color: $violet;
+        }
       }
-    }
-    i {
-      width: 20px;
-      color: darken($grey, 30%);
-      margin-right: $marginMenu;
+      .cercle {
+        position: relative;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $violet;
+        color: white;
+        font-size: 12px;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin-right: $marginMenu;
+        p {
+          font-size: 11px;
+        }
+      }
+      i {
+        width: 20px;
+        color: darken($grey, 30%);
+        margin-right: $marginMenu;
+      }
     }
   }
 }
@@ -166,12 +170,12 @@ nav {
       width: 80%;
     }
     p {
-      font-size: 12px;
+      font-size: 14px;
       margin-left: $marginLeftText;
     }
     h6 {
       font-weight: bold;
-      font-size: 13px;
+      font-size: 14px;
       margin-left: $marginLeftText;
     }
     i {
