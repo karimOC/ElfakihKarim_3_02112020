@@ -48,6 +48,7 @@ $marginBottom: 15px;
     }
     .plats {
       display: flex;
+      justify-content: space-between;
       background-color: white;
       border-radius: 20px;
       line-height: 0;
@@ -67,24 +68,27 @@ $marginBottom: 15px;
         transform: translate(-100px, 0);
         transition: transform 300ms ease-in-out;
       }
-      &:hover .points {
-        transform: scaleX(1);
-        transform: translate(-100px, 0);
-        transition: transform 400ms ease-in;
-      }
-      h5 {
-        font-size: 14px;
-      }
-      p {
-        font-size: 12px;
-        line-height: 1;
+      &:hover .titreDescriptif {
+        width: 50%;
       }
       .titreDescriptif {
-        width: 80%;
+        transform: scaleX(1);
+        h5 {
+          font-size: 14px;
+          line-height: 1.2;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        p {
+          font-size: 12px;
+          line-height: 1.2;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
       }
       .prixDescriptif {
-        background-color: white;
-        width: 10%;
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
@@ -92,19 +96,8 @@ $marginBottom: 15px;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
       }
-      .points {
-        background-color: white;
-        display: flex;
-        align-items: flex-end;
-        padding: 0px 20px 0px 20px;
-        transform: scaleX(0);
-        p {
-          font-size: 12px;
-          font-weight: bold;
-        }
-      }
       .prix {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: bold;
       }
       .transitionOk {

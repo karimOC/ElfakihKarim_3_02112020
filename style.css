@@ -103,6 +103,7 @@ body {
 }
 #menu .bloc-menu .plats {
   display: flex;
+  justify-content: space-between;
   background-color: white;
   border-radius: 20px;
   line-height: 0;
@@ -123,24 +124,27 @@ body {
   transform: translate(-100px, 0);
   transition: transform 300ms ease-in-out;
 }
-#menu .bloc-menu .plats:hover .points {
-  transform: scaleX(1);
-  transform: translate(-100px, 0);
-  transition: transform 400ms ease-in;
-}
-#menu .bloc-menu .plats h5 {
-  font-size: 14px;
-}
-#menu .bloc-menu .plats p {
-  font-size: 12px;
-  line-height: 1;
+#menu .bloc-menu .plats:hover .titreDescriptif {
+  width: 50%;
 }
 #menu .bloc-menu .plats .titreDescriptif {
-  width: 80%;
+  transform: scaleX(1);
+}
+#menu .bloc-menu .plats .titreDescriptif h5 {
+  font-size: 14px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#menu .bloc-menu .plats .titreDescriptif p {
+  font-size: 12px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 #menu .bloc-menu .plats .prixDescriptif {
-  background-color: white;
-  width: 10%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -148,19 +152,8 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-#menu .bloc-menu .plats .points {
-  background-color: white;
-  display: flex;
-  align-items: flex-end;
-  padding: 0px 20px 0px 20px;
-  transform: scaleX(0);
-}
-#menu .bloc-menu .plats .points p {
-  font-size: 12px;
-  font-weight: bold;
-}
 #menu .bloc-menu .plats .prix {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
 }
 #menu .bloc-menu .plats .transitionOk {
