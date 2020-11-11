@@ -78,14 +78,29 @@ body {
   padding-bottom: 50px;
 }
 #menu .titreMenu {
+  border: 1px solid pink;
   font-family: "Shrikhand", sans-serif;
-  width: 80%;
+  width: 90%;
   font-size: 25px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
+}
+#menu .coeurRestau {
+  position: absolute;
+  right: 18%;
+  top: 30px;
+}
+#menu .coeurRestau:hover .fas {
+  transform-origin: bottom 100%;
+  transition: transform 300ms ease-in-out;
+  transform: scale(1);
+}
+#menu .coeurRestau .far {
+  position: absolute;
+}
+#menu .coeurRestau .fas {
+  position: absolute;
+  transform: scale(0);
+  color: #ff79da;
 }
 #menu .bloc-menu {
   width: 90%;
@@ -356,14 +371,23 @@ nav a {
   font-size: 14px;
   margin-left: 10px;
 }
-.bloc-restau .infoRestau i {
+.bloc-restau .infoRestau .coeurRestau {
   position: absolute;
   right: 8%;
   top: 40%;
 }
-.bloc-restau .infoRestau i:hover {
-  background-color: #ff79da;
-  transition: background-color 1500ms;
+.bloc-restau .infoRestau .coeurRestau:hover .fas {
+  transform-origin: bottom 100%;
+  transition: transform 300ms ease-in-out;
+  transform: scale(1);
+}
+.bloc-restau .infoRestau .coeurRestau .far {
+  position: absolute;
+}
+.bloc-restau .infoRestau .coeurRestau .fas {
+  position: absolute;
+  transform: scale(0);
+  color: #ff79da;
 }
 
 @media screen and (max-width: 460px) {

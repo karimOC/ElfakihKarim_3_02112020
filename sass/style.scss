@@ -178,13 +178,22 @@ nav {
       font-size: 14px;
       margin-left: $marginLeftText;
     }
-    i {
+    .coeurRestau {
       position: absolute;
       right: 8%;
       top: 40%;
-      &:hover {
-        background-color: $rose;
-        transition: background-color 1500ms;
+      &:hover .fas {
+        transform-origin: bottom 100%;
+        transition: transform 300ms ease-in-out;
+        transform: scale(1);
+      }
+      .far {
+        position: absolute;
+      }
+      .fas {
+        position: absolute;
+        transform: scale(0);
+        color: $rose;
       }
     }
   }

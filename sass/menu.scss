@@ -24,14 +24,29 @@ $marginBottom: 15px;
   top: 190px;
   padding-bottom: 50px;
   .titreMenu {
+    border: 1px solid pink;
     font-family: "Shrikhand", sans-serif;
-    width: 80%;
+    width: 90%;
     font-size: 25px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
+  }
+  .coeurRestau {
+    position: absolute;
+    right: 18%;
+    top: 30px;
+    &:hover .fas {
+      transform-origin: bottom 100%;
+      transition: transform 300ms ease-in-out;
+      transform: scale(1);
+    }
+    .far {
+      position: absolute;
+    }
+    .fas {
+      position: absolute;
+      transform: scale(0);
+      color: $rose;
+    }
   }
   .bloc-menu {
     width: 90%;
