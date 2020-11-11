@@ -9,8 +9,13 @@ $rose: #ff79da;
 $vert: #99e2d0;
 $marginBottom: 15px;
 @keyframes transition-load {
-  from {opacity: 0%;}
-  to {opacity: 100%;}
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+}
+100% {
+    opacity: 1;
+}
 }
 .imgAccueil img {
   width: 100%;
@@ -54,13 +59,13 @@ $marginBottom: 15px;
     width: 90%;
     margin-bottom: 15px;
     .plats:nth-child(2) {
-      animation: transition-load 1s;
+      animation: transition-load .5s;
     }
     .plats:nth-child(3) {
-      animation: transition-load 3s;
+      animation: transition-load 1s;
     }
     .plats:nth-child(4) {
-      animation: transition-load 4s;
+      animation: transition-load 2s;
     }
     p { 
       font-size: 15px;
@@ -103,9 +108,7 @@ $marginBottom: 15px;
         h5 {
           font-size: 14px;
           line-height: 1.2;
-          text-overflow: ellipsis;
           white-space: nowrap;
-          overflow: hidden;
         }
         p {
           font-size: 12px;

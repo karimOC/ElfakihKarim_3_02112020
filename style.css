@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
 }
 
 /* IMPORT .SCSS */
@@ -33,10 +32,12 @@ footer {
   padding: 20px 0px 20px 20px;
 }
 footer .logo {
-  width: 80px;
-  -webkit-filter: invert(100%);
-  /* inverser la couleur */
+  font-family: "Shrikhand", cursive;
   padding-bottom: 10px;
+  color: white;
+}
+footer .logo p {
+  font-size: 16px;
 }
 footer p {
   color: white;
@@ -61,11 +62,12 @@ body {
 }
 
 @keyframes transition-load {
-  from {
-    opacity: 0%;
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
   }
-  to {
-    opacity: 100%;
+  100% {
+    opacity: 1;
   }
 }
 .imgAccueil img {
@@ -113,13 +115,13 @@ body {
   margin-bottom: 15px;
 }
 #menu .bloc-menu .plats:nth-child(2) {
-  animation: transition-load 1s;
+  animation: transition-load 0.5s;
 }
 #menu .bloc-menu .plats:nth-child(3) {
-  animation: transition-load 3s;
+  animation: transition-load 1s;
 }
 #menu .bloc-menu .plats:nth-child(4) {
-  animation: transition-load 4s;
+  animation: transition-load 2s;
 }
 #menu .bloc-menu p {
   font-size: 15px;
@@ -164,9 +166,7 @@ body {
 #menu .bloc-menu .plats .titreDescriptif h5 {
   font-size: 14px;
   line-height: 1.2;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 #menu .bloc-menu .plats .titreDescriptif p {
   font-size: 12px;
@@ -223,6 +223,34 @@ footer {
   top: 180px;
 }
 
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.loader {
+  font-size: 10px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  border-top: 4px solid #f1f1f1;
+  border-right: 4px solid #f1f1f1;
+  border-bottom: 4px solid #f1f1f1;
+  border-left: 4px solid #99e2d0;
+  transform: translateZ(0);
+  animation: load8 0.6s infinite linear;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* LES VARIABLES */
 /* LES MIXIN */
 #section_recherche .ville {
