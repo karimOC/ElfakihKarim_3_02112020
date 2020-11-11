@@ -60,6 +60,14 @@ body {
   margin: 0;
 }
 
+@keyframes transition-load {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 .imgAccueil img {
   width: 100%;
   height: 250px;
@@ -78,7 +86,6 @@ body {
   padding-bottom: 50px;
 }
 #menu .titreMenu {
-  border: 1px solid pink;
   font-family: "Shrikhand", sans-serif;
   width: 90%;
   font-size: 25px;
@@ -91,7 +98,7 @@ body {
 }
 #menu .coeurRestau:hover .fas {
   transform-origin: bottom 100%;
-  transition: transform 300ms ease-in-out;
+  transition: transform 400ms ease-in-out;
   transform: scale(1);
 }
 #menu .coeurRestau .far {
@@ -100,11 +107,19 @@ body {
 #menu .coeurRestau .fas {
   position: absolute;
   transform: scale(0);
-  color: #ff79da;
 }
 #menu .bloc-menu {
   width: 90%;
   margin-bottom: 15px;
+}
+#menu .bloc-menu .plats:nth-child(2) {
+  animation: transition-load 1s;
+}
+#menu .bloc-menu .plats:nth-child(3) {
+  animation: transition-load 3s;
+}
+#menu .bloc-menu .plats:nth-child(4) {
+  animation: transition-load 4s;
 }
 #menu .bloc-menu p {
   font-size: 15px;
@@ -124,6 +139,7 @@ body {
   line-height: 0;
   padding: 2px 0px 5px 12px;
   margin-bottom: 15px;
+  box-shadow: 1px 5px 8px 0px #dddddd;
   transform: rotate(0turn);
 }
 #menu .bloc-menu .plats:hover .transitionOk {
@@ -194,15 +210,12 @@ body {
   border: none;
   outline: none;
   width: 180px;
-  height: 40px;
-  border-radius: 20px;
+  height: 50px;
+  border-radius: 40px;
   color: white;
   margin-top: 15px;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-}
-#menu input:hover {
-  background-color: red;
-  cursor: url(/images/cursor.png), auto;
+  box-shadow: 1px 5px 8px 0px #dddddd;
 }
 
 footer {
@@ -243,11 +256,12 @@ footer {
   border: none;
   outline: none;
   width: 200px;
-  height: 40px;
-  border-radius: 20px;
+  height: 50px;
+  border-radius: 30px;
   color: white;
   margin-top: 15px;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  box-shadow: 1px 5px 8px 0px #dddddd;
 }
 
 nav {
@@ -276,7 +290,7 @@ nav a {
   background-color: #f8f8f8;
   display: flex;
   align-items: center;
-  border-radius: 12px;
+  border-radius: 20px;
   height: 60px;
   margin-bottom: 20px;
   font-weight: bold;
@@ -378,7 +392,7 @@ nav a {
 }
 .bloc-restau .infoRestau .coeurRestau:hover .fas {
   transform-origin: bottom 100%;
-  transition: transform 300ms ease-in-out;
+  transition: transform 400ms ease-in-out;
   transform: scale(1);
 }
 .bloc-restau .infoRestau .coeurRestau .far {
@@ -387,7 +401,6 @@ nav a {
 .bloc-restau .infoRestau .coeurRestau .fas {
   position: absolute;
   transform: scale(0);
-  color: #ff79da;
 }
 
 @media screen and (max-width: 460px) {

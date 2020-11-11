@@ -8,6 +8,10 @@ $violet: #9356dc;
 $rose: #ff79da;
 $vert: #99e2d0;
 $marginBottom: 15px;
+@keyframes transition-load {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
 .imgAccueil img {
   width: 100%;
   height: 250px;
@@ -24,7 +28,6 @@ $marginBottom: 15px;
   top: 190px;
   padding-bottom: 50px;
   .titreMenu {
-    border: 1px solid pink;
     font-family: "Shrikhand", sans-serif;
     width: 90%;
     font-size: 25px;
@@ -36,7 +39,7 @@ $marginBottom: 15px;
     top: 30px;
     &:hover .fas {
       transform-origin: bottom 100%;
-      transition: transform 300ms ease-in-out;
+      transition: transform 400ms ease-in-out;
       transform: scale(1);
     }
     .far {
@@ -45,13 +48,21 @@ $marginBottom: 15px;
     .fas {
       position: absolute;
       transform: scale(0);
-      color: $rose;
     }
   }
   .bloc-menu {
     width: 90%;
     margin-bottom: 15px;
-    p {
+    .plats:nth-child(2) {
+      animation: transition-load 1s;
+    }
+    .plats:nth-child(3) {
+      animation: transition-load 3s;
+    }
+    .plats:nth-child(4) {
+      animation: transition-load 4s;
+    }
+    p { 
       font-size: 15px;
       line-height: 0;
     }
@@ -69,6 +80,7 @@ $marginBottom: 15px;
       line-height: 0;
       padding: 2px 0px 5px 12px;
       margin-bottom: $marginBottom;
+      box-shadow: 1px 5px 8px 0px rgb(221, 221, 221);
       transform: rotate(0turn);
       &:hover .transitionOk {
         transform-origin: right 100%;
@@ -140,15 +152,12 @@ $marginBottom: 15px;
     border: none;
     outline: none;
     width: 180px;
-    height: 40px;
-    border-radius: 20px;
+    height: 50px;
+    border-radius: 40px;
     color: white;
     margin-top: 15px;
     background: linear-gradient(to bottom right, $rose, $violet);
-    &:hover {
-      background-color: red;
-      cursor: url(/images/cursor.png), auto;
-    }
+    box-shadow: 1px 5px 8px 0px rgb(221, 221, 221);
   }
 }
 footer {
