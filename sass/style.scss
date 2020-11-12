@@ -60,10 +60,10 @@ $box-shadow: 1px 5px 8px 0px rgb(228, 228, 228);
   }
 }
 .loadingPage2 {
-  animation: accueilBody 1s;
+  animation: accueilBody 2s;
 }
 main {
-  animation: accueilBody 1s;
+  animation: accueilBody 2s;
 }
 .loadingPage {
   display: flex;
@@ -72,7 +72,7 @@ main {
   width: 100%;
   top: 20%;
   transform: scale(0);
-  animation: accueilSpinner 1s;
+  animation: accueilSpinner 2s;
 }
 #section_recherche {
   .ville {

@@ -230,14 +230,14 @@ footer a i {
   height: 2.5em;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation: load7 1.8s infinite ease-in-out;
-  animation: load7 1.8s infinite ease-in-out;
+  -webkit-animation: load7 0.8s infinite ease-in-out;
+  animation: load7 1s infinite ease-in-out;
 }
 
 .loader {
   color: #99e2d0;
   font-size: 10px;
-  margin: 80px auto;
+  margin: 100px auto;
   position: relative;
   text-indent: -9999em;
   -webkit-transform: translateZ(0);
@@ -310,11 +310,11 @@ footer a i {
   }
 }
 .loadingPage2 {
-  animation: accueilBody 1s;
+  animation: accueilBody 2s;
 }
 
 main {
-  animation: accueilBody 1s;
+  animation: accueilBody 2s;
 }
 
 .loadingPage {
@@ -324,7 +324,7 @@ main {
   width: 100%;
   top: 20%;
   transform: scale(0);
-  animation: accueilSpinner 1s;
+  animation: accueilSpinner 2s;
 }
 
 #section_recherche .ville {
