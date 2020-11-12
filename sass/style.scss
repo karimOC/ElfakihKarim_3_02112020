@@ -1,10 +1,10 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 /* IMPORT .SCSS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 @import "header.scss";
-@import "footer.scss"; 
+@import "footer.scss";
 @import "menu.scss";
 @import "loaderspinner.scss";
 /* LES VARIABLES */
@@ -13,7 +13,7 @@ $violet: #9356dc;
 $rose: #ff79da;
 $vert: #99e2d0;
 $marginMenu: 20px;
-$marginLeftText: 10px; 
+$marginLeftText: 10px;
 $box-shadow: 1px 5px 8px 0px rgb(228, 228, 228);
 /* LES MIXIN */
 @mixin lien_menu {
@@ -76,7 +76,6 @@ nav {
   align-items: center;
   width: 100%;
   @include lien_menu();
-
 }
 #section_menu {
   display: flex;
@@ -186,9 +185,9 @@ nav {
       right: 8%;
       top: 40%;
       &:hover .fas {
-      transform-origin: bottom 100%;
-      transition: transform 400ms ease-in-out;
-      transform: scale(1);
+        transform-origin: bottom 100%;
+        transition: transform 400ms ease-in-out;
+        transform: scale(1);
       }
       .far {
         position: absolute;
@@ -200,7 +199,6 @@ nav {
     }
   }
 }
-
 @media screen and (max-width: 460px) {
   h4 {
     width: 90%;
