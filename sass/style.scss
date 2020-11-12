@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin: 0;
 }
 /* IMPORT .SCSS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
@@ -29,6 +31,51 @@ $box-shadow: 1px 5px 8px 0px rgb(228, 228, 228);
     text-decoration: none;
     color: black;
   }
+}
+/* LES KEYFRAMES */
+@keyframes accueilSpinner {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  97% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes accueilBody {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  99% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header {
+  animation: accueilBody 1s;
+}
+section {
+  animation: accueilBody 1s;
+}
+footer {
+  animation: accueilBody 1s;
+}
+.loadingPage {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  transform: scale(0);
+  animation: accueilSpinner 1s;
 }
 #section_recherche {
   .ville {
@@ -147,8 +194,8 @@ nav {
     height: 180px;
     overflow: hidden;
     img {
-      width: 100%;
-      height: 110%;
+      width: 105%;
+      height: 105%;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
     }
