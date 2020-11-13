@@ -95,7 +95,7 @@ footer a i {
   top: 30px;
 }
 #menu .coeurRestau:hover .fas {
-  transform-origin: bottom 100%;
+  transform-origin: center 100%;
   transition: transform 400ms ease-in-out;
   transform: scale(1);
 }
@@ -481,7 +481,7 @@ nav a {
   top: 40%;
 }
 .bloc-restau .infoRestau .coeurRestau:hover .fas {
-  transform-origin: bottom 100%;
+  transform-origin: center 100%;
   transition: transform 400ms ease-in-out;
   transform: scale(1);
 }
