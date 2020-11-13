@@ -28,15 +28,17 @@ $marginBottom: 15px;
   top: 190px;
   padding-bottom: 50px;
   .titreMenu {
+    justify-content: space-between;
     font-family: "Shrikhand", sans-serif;
     width: 90%;
     font-size: 25px;
     display: flex;
   }
   .coeurRestau {
-    position: absolute;
-    right: 18%;
-    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
     &:hover .fas {
       transform-origin: center 100%;
       transition: transform 400ms ease-in-out;
@@ -77,7 +79,6 @@ $marginBottom: 15px;
     }
     .plats {
       display: flex;
-      justify-content: space-between;
       background-color: white;
       border-radius: 20px;
       line-height: 0;
@@ -94,14 +95,15 @@ $marginBottom: 15px;
         transform: rotate(2turn);
         transition: transform 400ms ease-in-out;
       }
-      &:hover .prixDescriptif {
-        transform: translate(-100px, 0);
-        transition: transform 300ms ease-in-out;
-      }
+      // &:hover .prixDescriptif {
+      //   transform: translate(-100px, 0);
+      //   transition: transform 300ms ease-in-out;
+      // }
       &:hover .titreDescriptif {
         width: 50%;
       }
       .titreDescriptif {
+        width: 100%;
         transform: scaleX(1);
         h5 {
           font-size: 14px;
@@ -130,7 +132,7 @@ $marginBottom: 15px;
       }
       .transitionOk {
         background-color: $vert;
-        width: 30%;
+        width: 35%;
         height: 100%;
         position: absolute;
         right: 0%;
@@ -152,8 +154,8 @@ $marginBottom: 15px;
   input {
     border: none;
     outline: none;
-    width: 180px;
-    height: 50px;
+    width: 200px;
+    height: 60px;
     border-radius: 40px;
     color: white;
     margin-top: 15px;
@@ -164,4 +166,41 @@ $marginBottom: 15px;
 #footerMenu {
   position: relative;
   top: 180px;
+}
+@media all and (min-width: 426px) and (max-width: 768px) {
+  .imgAccueil img {
+    height: 300px;
+  }
+  #menu {
+    top: 240px;
+  }
+  #footerMenu {
+    top: 230px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1440px) {
+  .imgAccueil img {
+    height: 600px;
+  }
+  #menu {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 490px;
+    .titreMenu {
+    justify-content: flex-start;
+    }
+    .bloc-menu {
+      width: 25%;
+      margin-right: 40px;
+    }
+    .btnCmd {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  #footerMenu {
+    top: 480px;
+  }
 }

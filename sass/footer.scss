@@ -27,3 +27,33 @@ footer {
     }
   }
 }
+@media all and (min-width: 426px) and (max-width: 768px) {
+  footer {
+    .logo {
+      p {
+      font-size: 30px;
+      }
+    }
+    align-items: center;
+    p {
+      color: white;
+      font-size: 15px;
+      line-height: 1px;
+    }
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1440px) {
+  footer {
+    .logo {
+      p {
+      font-size: 30px;
+      }
+    }
+    align-items: center;
+    p {
+      color: white;
+      font-size: 15px;
+      line-height: 1px;
+    }
+  }
+}

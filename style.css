@@ -57,6 +57,32 @@ footer a i {
   color: white;
 }
 
+@media all and (min-width: 426px) and (max-width: 768px) {
+  footer {
+    align-items: center;
+  }
+  footer .logo p {
+    font-size: 30px;
+  }
+  footer p {
+    color: white;
+    font-size: 15px;
+    line-height: 1px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1440px) {
+  footer {
+    align-items: center;
+  }
+  footer .logo p {
+    font-size: 30px;
+  }
+  footer p {
+    color: white;
+    font-size: 15px;
+    line-height: 1px;
+  }
+}
 @keyframes transition-load {
   0% {
     opacity: 0;
@@ -84,15 +110,17 @@ footer a i {
   padding-bottom: 50px;
 }
 #menu .titreMenu {
+  justify-content: space-between;
   font-family: "Shrikhand", sans-serif;
   width: 90%;
   font-size: 25px;
   display: flex;
 }
 #menu .coeurRestau {
-  position: absolute;
-  right: 18%;
-  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
 }
 #menu .coeurRestau:hover .fas {
   transform-origin: center 100%;
@@ -134,7 +162,6 @@ footer a i {
 }
 #menu .bloc-menu .plats {
   display: flex;
-  justify-content: space-between;
   background-color: white;
   border-radius: 20px;
   line-height: 0;
@@ -152,14 +179,11 @@ footer a i {
   transform: rotate(2turn);
   transition: transform 400ms ease-in-out;
 }
-#menu .bloc-menu .plats:hover .prixDescriptif {
-  transform: translate(-100px, 0);
-  transition: transform 300ms ease-in-out;
-}
 #menu .bloc-menu .plats:hover .titreDescriptif {
   width: 50%;
 }
 #menu .bloc-menu .plats .titreDescriptif {
+  width: 100%;
   transform: scaleX(1);
 }
 #menu .bloc-menu .plats .titreDescriptif h5 {
@@ -188,7 +212,7 @@ footer a i {
 }
 #menu .bloc-menu .plats .transitionOk {
   background-color: #99e2d0;
-  width: 30%;
+  width: 35%;
   height: 100%;
   position: absolute;
   right: 0%;
@@ -208,8 +232,8 @@ footer a i {
 #menu input {
   border: none;
   outline: none;
-  width: 180px;
-  height: 50px;
+  width: 200px;
+  height: 60px;
   border-radius: 40px;
   color: white;
   margin-top: 15px;
@@ -222,6 +246,47 @@ footer a i {
   top: 180px;
 }
 
+@media all and (min-width: 426px) and (max-width: 768px) {
+  .imgAccueil img {
+    height: 300px;
+  }
+
+  #menu {
+    top: 240px;
+  }
+
+  #footerMenu {
+    top: 230px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1440px) {
+  .imgAccueil img {
+    height: 600px;
+  }
+
+  #menu {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 490px;
+  }
+  #menu .titreMenu {
+    justify-content: flex-start;
+  }
+  #menu .bloc-menu {
+    width: 25%;
+    margin-right: 40px;
+  }
+  #menu .btnCmd {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #footerMenu {
+    top: 480px;
+  }
+}
 .loader,
 .loader:before,
 .loader:after {
@@ -493,7 +558,7 @@ nav a {
   transform: scale(0);
 }
 
-@media screen and (max-width: 460px) {
+@media all and (max-width: 425px) {
   h4 {
     width: 90%;
     text-align: left;
@@ -501,6 +566,25 @@ nav a {
 
   .explorer h4 {
     text-align: center;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1440px) {
+  #section_menu a {
+    width: 20%;
+  }
+
+  #section-restau {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #section-restau h4 {
+    width: 100%;
+    text-align: center;
+  }
+  #section-restau .bloc-restau {
+    width: 20%;
+    margin-right: 30px;
   }
 }
 

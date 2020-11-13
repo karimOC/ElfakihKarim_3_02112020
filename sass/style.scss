@@ -243,12 +243,32 @@ nav {
     }
   }
 }
-@media screen and (max-width: 460px) {
+@media all and (max-width: 425px) {
   h4 {
     width: 90%;
     text-align: left;
   }
   .explorer h4 {
     text-align: center;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1440px) {
+  #section_menu {
+    a {
+      width: 20%;
+    }
+  }
+  #section-restau {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    h4 {
+      width: 100%;
+      text-align: center;
+    }
+    .bloc-restau {
+    width: 20%;
+    margin-right: 30px;
+  }
   }
 }
