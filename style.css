@@ -233,7 +233,7 @@ footer a i {
 }
 
 .loader {
-  color: #99e2d0;
+  color: #9356dc;
   font-size: 10px;
   margin: 100px auto;
   position: relative;
@@ -308,7 +308,7 @@ main {
   justify-content: center;
   position: absolute;
   width: 100%;
-  top: 20%;
+  top: 10%;
   transform: scale(0);
   animation: accueilSpinner 2s;
 }
