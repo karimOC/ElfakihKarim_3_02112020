@@ -586,7 +586,7 @@ nav a {
     right: 11%;
   }
 }
-@media all and (min-width: 769px) and (max-width: 1440px) {
+@media all and (min-width: 769px) {
   #section_menu a {
     width: 30%;
   }
