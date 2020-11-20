@@ -40,7 +40,7 @@ $marginBottom: 15px;
     justify-content: center;
     width: 10%;
     &:hover .fas {
-      transform-origin: center 100%;
+      transform-origin: bottom;
       transition: transform 400ms ease-in-out;
       transform: scale(1);
     }
@@ -95,10 +95,6 @@ $marginBottom: 15px;
         transform: rotate(2turn);
         transition: transform 400ms ease-in-out;
       }
-      // &:hover .prixDescriptif {
-      //   transform: translate(-100px, 0);
-      //   transition: transform 300ms ease-in-out;
-      // }
       &:hover .titreDescriptif {
         width: 50%;
       }
@@ -123,8 +119,6 @@ $marginBottom: 15px;
         justify-content: flex-end;
         align-items: flex-end;
         padding: 0px 20px 18px 0px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
       }
       .prix {
         font-size: 15px;

@@ -7,8 +7,7 @@ body {
 
 /* IMPORT .SCSS */
 header {
-  font-family: "Shrikhand", cursive;
-  text-align: center;
+  font-family: "Shrikhand", serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,7 +33,7 @@ footer {
   padding: 20px 0px 20px 20px;
 }
 footer .logo {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", serif;
   padding-bottom: 10px;
   color: white;
 }
@@ -123,7 +122,7 @@ footer a i {
   width: 10%;
 }
 #menu .coeurRestau:hover .fas {
-  transform-origin: center 100%;
+  transform-origin: bottom;
   transition: transform 400ms ease-in-out;
   transform: scale(1);
 }
@@ -203,8 +202,6 @@ footer a i {
   justify-content: flex-end;
   align-items: flex-end;
   padding: 0px 20px 18px 0px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 #menu .bloc-menu .plats .prix {
   font-size: 15px;
