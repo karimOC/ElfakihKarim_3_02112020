@@ -35,35 +35,29 @@ $box-shadow: 1px 5px 8px 0px rgb(228, 228, 228);
 /* LES KEYFRAMES */
 @keyframes accueilSpinner {
   0% {
-    opacity: 1;
     transform: scale(1);
   }
   97% {
-    opacity: 1;
     transform: scale(1);
   }
   100% {
-    opacity: 0;
+    transform: scale(0);
   }
 }
 @keyframes accueilBody {
   0% {
-    opacity: 0;
     transform: scale(0);
   }
   99% {
-    opacity: 0;
     transform: scale(0);
   }
   100% {
-    opacity: 1;
+  transform: scale(1);
   }
 }
-.loadingPage2 {
+.corpsSite {
   animation: accueilBody 2s;
-}
-main {
-  animation: accueilBody 2s;
+  transform: scale(1);
 }
 .loadingPage {
   display: flex;
@@ -228,8 +222,8 @@ nav {
       right: 8%;
       top: 40%;
       &:hover .fas {
-        transform-origin: center 100%;
-        transition: transform 400ms ease-in-out;
+        transform-origin: bottom;
+        transition: transform 400ms;
         transform: scale(1);
       }
       .far {

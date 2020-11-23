@@ -41,7 +41,7 @@ $marginBottom: 15px;
     width: 10%;
     &:hover .fas {
       transform-origin: bottom;
-      transition: transform 400ms ease-in-out;
+      transition: transform 400ms;
       transform: scale(1);
     }
     .far {
@@ -172,7 +172,7 @@ $marginBottom: 15px;
     top: 230px;
   }
 }
-@media all and (min-width: 769px) and (max-width: 1440px) {
+@media all and (min-width: 769px) {
   .imgAccueil img {
     height: 600px;
   }

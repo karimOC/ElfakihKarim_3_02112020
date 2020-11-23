@@ -123,7 +123,7 @@ footer a i {
 }
 #menu .coeurRestau:hover .fas {
   transform-origin: bottom;
-  transition: transform 400ms ease-in-out;
+  transition: transform 400ms;
   transform: scale(1);
 }
 #menu .coeurRestau .far {
@@ -256,7 +256,7 @@ footer a i {
     top: 230px;
   }
 }
-@media all and (min-width: 769px) and (max-width: 1440px) {
+@media all and (min-width: 769px) {
   .imgAccueil img {
     height: 600px;
   }
@@ -333,36 +333,29 @@ footer a i {
 /* LES KEYFRAMES */
 @keyframes accueilSpinner {
   0% {
-    opacity: 1;
     transform: scale(1);
   }
   97% {
-    opacity: 1;
     transform: scale(1);
   }
   100% {
-    opacity: 0;
+    transform: scale(0);
   }
 }
 @keyframes accueilBody {
   0% {
-    opacity: 0;
     transform: scale(0);
   }
   99% {
-    opacity: 0;
     transform: scale(0);
   }
   100% {
-    opacity: 1;
+    transform: scale(1);
   }
 }
-.loadingPage2 {
+.corpsSite {
   animation: accueilBody 2s;
-}
-
-main {
-  animation: accueilBody 2s;
+  transform: scale(1);
 }
 
 .loadingPage {
@@ -542,8 +535,8 @@ nav a {
   top: 40%;
 }
 .bloc-restau .infoRestau .coeurRestau:hover .fas {
-  transform-origin: center 100%;
-  transition: transform 400ms ease-in-out;
+  transform-origin: bottom;
+  transition: transform 400ms;
   transform: scale(1);
 }
 .bloc-restau .infoRestau .coeurRestau .far {
